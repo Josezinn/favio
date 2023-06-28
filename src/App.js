@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-
+/*
+Arquivo App JSX
+Componente funcional = porque ele é uma função
+*/
 function App() {
+  /*Todo componente deve retornar um html entre parenteses*/
   return (
+    /*O React substitui className por class porque class é palavra resrvada do JS */
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         José Francisco
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Google
         </a>
       </header>
     </div>
+    </>
   );
 }
 
