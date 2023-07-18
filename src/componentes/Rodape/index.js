@@ -1,7 +1,14 @@
 import React from 'react'
+import styles from "./Rodape.module.css";
 
 export default function Rodape() {
   return (
-    <div>Rodape</div>
+    <div className={styles.rodape}>
+      Rodape
+      <div>
+        Data Corrente aqui
+      </div>
+
+    </div>
   )
 }
