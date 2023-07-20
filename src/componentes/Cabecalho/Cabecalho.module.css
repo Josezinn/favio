@@ -3,6 +3,8 @@
   justify-content: space-around;
   background-color: #4682b4;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .titulo {
@@ -13,4 +15,8 @@
 
 .subtitulo {
   font-size: 2rem;
+}
+
+body{
+  background-color: #a3905098;
 }

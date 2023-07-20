@@ -2,7 +2,9 @@ import React from 'react'
 
 export default function Conteudo() {
   return (
-    <div>Conteudo</div>
+    <div className='conteudo'>
+      <div> Esse é meu site de testes de gerenciador de favoritos.</div>
+    </div>
   )
 }
 //So pode ter uma função default

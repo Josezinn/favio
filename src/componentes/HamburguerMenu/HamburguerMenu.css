@@ -1,0 +1,68 @@
+.hamburguer-menu {
+  position: relative;
+}
+
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 1000;
+}
+
+.menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: all 0.3s;
+}
+
+.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-nav {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #f0f0f0;
+  width: 200px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.open .menu-nav {
+  height: auto; /* Alteramos de 150px para auto para que o menu se ajuste ao conteúdo */
+  width: auto;
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav li {
+  padding: 5px;
+}
+
+.menu-nav li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.menu-nav li a:hover {
+  background-color: #ddd;
+}
