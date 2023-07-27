@@ -6,19 +6,6 @@ import Rodape from "./componentes/Rodape";
 Arquivo App JSX
 Componente funcional = porque ele é uma função
 */
-const express = require ("express");
-const app = express ();
-const port = process. env. PORT || 3000;
-app. listen (port, ()=>{
-   console. log (`API pronta  para uso na porta: ${port}`);
-});
-
-app.get ("/", (req, res, next) =>{            
-  res. json ({ title: "API em Node.js" });
-});
-    
-
-
 function App() {
   OlaMundo();
   /*Todo componente deve retornar um html entre parenteses*/
