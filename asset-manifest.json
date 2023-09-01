@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/favio/static/css/main.e2d6234a.css",
+    "main.js": "/favio/static/js/main.6c2fc5b1.js",
+    "static/js/787.f04ad837.chunk.js": "/favio/static/js/787.f04ad837.chunk.js",
+    "static/media/instagram.svg": "/favio/static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
+    "static/media/twitter.svg": "/favio/static/media/twitter.0407223bb7bca83e1349f743cc8849a2.svg",
+    "index.html": "/favio/index.html",
+    "static/media/facebook.svg": "/favio/static/media/facebook.d0e6c35f87cabc4c3d016b72ba214d1f.svg",
+    "main.e2d6234a.css.map": "/favio/static/css/main.e2d6234a.css.map",
+    "main.6c2fc5b1.js.map": "/favio/static/js/main.6c2fc5b1.js.map",
+    "787.f04ad837.chunk.js.map": "/favio/static/js/787.f04ad837.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2d6234a.css",
+    "static/js/main.6c2fc5b1.js"
+  ]
+}
