@@ -2,6 +2,7 @@ import "./App.css";
 import Cabecalho from "./componentes/Cabecalho";
 import Conteudo, { OlaMundo } from "./componentes/Conteudo";
 import Rodape from "./componentes/Rodape";
+import Estados from "./exemplos/Estados";
 /*
 Arquivo App JSX
 Componente funcional = porque ele é uma função
@@ -12,9 +13,11 @@ function App() {
   return (
     /*O React substitui className por class porque class é palavra resrvada do JS */
     <>
-      <Cabecalho logo="logo192.png" titulo="Fav.io" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!!" />
-      <Conteudo />
-      <Rodape svg1="facebook.svg"/>
+        
+      {/* <Cabecalho logo="logo192.png" titulo="Fav.io" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!!" /> */}
+      {/* <Conteudo /> */}
+      <Estados/>
+      {/* <Rodape svg1="facebook.svg"/> */}
     </>
   );
 }
