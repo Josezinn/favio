@@ -16,7 +16,7 @@ function App() {
       <Cabecalho logo="logo192.png" titulo="Fav.io" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!!" />
       <Conteudo />
       {/*<Estados/>*/}
-      <Rodape svg1="facebook.svg"/>
+      <Rodape/>
     </>
   );
 }
