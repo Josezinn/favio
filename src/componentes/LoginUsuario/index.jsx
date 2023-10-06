@@ -12,6 +12,12 @@ const LoginUsuario = () => {
                     //Convertendo para objeto JS
                     const usuarios = JSON.parse(usuariosCadastrados);          
                     console.log("Usuários recuperados do localStorage:", usuarios);
+
+                        for(let i = 0; i < usuarios.length; i++) {
+                            if(usuarios[i].emailUsuario === usuarioProcurado){
+                                alert ('email encontrado');
+                            }
+                        }
                 } else {
                     console.log("Nenhum usuário encontrado no localStorage");
                 }
