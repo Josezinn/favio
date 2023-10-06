@@ -1,6 +1,8 @@
 import "./App.css";
 import Cabecalho from "./componentes/Cabecalho";
+import CadastroUsuario from "./componentes/CadastroUsuario";
 import Conteudo from "./componentes/Conteudo";
+import LoginUsuario from "./componentes/LoginUsuario";
 import Rodape from "./componentes/Rodape";
 import Estados from "./exemplos/Estados";
 /*
@@ -14,7 +16,9 @@ function App() {
     <>
         
       <Cabecalho logo="logo192.png" titulo="Fav.io" subtitulo="O melhor gerenciador de favoritos da Internet Brasileira!!!" />
-      <Conteudo />
+       <CadastroUsuario/>
+       <LoginUsuario/>      
+      {/* <Conteudo /> */}
       {/*<Estados/>*/}
       <Rodape/>
     </>
