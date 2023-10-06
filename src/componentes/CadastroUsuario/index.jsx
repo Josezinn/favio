@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const CadastroUsuario = () => {
     const [emailUsuario, setEmailUsuario] = useState("");
@@ -7,15 +7,25 @@ const CadastroUsuario = () => {
     const [confirmaSenhaUsuario, setConfirmaSenhaUsuario] = useState("");
     const [usuarios, setUsuarios] = useState([])
 
+    useEffect(() => {
+      // Recupera os usuários do localStorage quando o componente for montado
+        const usuariosCadastrados = JSON.parse(localStorage.getItem("usuario"));
+        if (usuariosCadastrados) {
+            setUsuarios(usuariosCadastrados);
+        }
+      }, []);
+
     function salvarCadastroUsuario() {
         if(senhaUsuario !== confirmaSenhaUsuario) {
             alert('As senhas não coincidem. Por favor, digite novamente.');
         } else {
+          const novosUsuarios = [...usuarios, { nomeUsuario, emailUsuario, senhaUsuario }];
+          setUsuarios(novosUsuarios);
+          localStorage.setItem("usuario", JSON.stringify(novosUsuarios));
+
             console.log("usuarios>>>:", usuarios);
             console.log("estados>>>:", { nomeUsuario, emailUsuario });
-            setUsuarios([...usuarios, { nomeUsuario, emailUsuario, senhaUsuario}])
             console.log("usuarios 2>>>:", usuarios);
-            localStorage.setItem("usuario", JSON.stringify(usuarios));
         }
       }
 

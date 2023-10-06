@@ -5,22 +5,20 @@ const LoginUsuario = () => {
     const [senhaUsuario, setSenhaUsuario] = useState("");
 
     function realizarLogin(){        
-        const usuariosCadastrados = localStorage.getItem("usuario");
+        const usuariosCadastrados = localStorage.getItem("usuario") || [];
 
         if (usuariosCadastrados) {
             // Converter o valor JSON de volta para um objeto JavaScript
             const usuarios = JSON.parse(usuariosCadastrados);
-          
+
+            if (usuarios.find((usuario) => usuario.emailUsuario === emailUsuario && usuario.senhaUsuario === senhaUsuario)){
+                alert('Parabéns, você se logou com sucesso!');
+            } else {
+                alert('Erro! Não foi possivel efetuar o login, confira as credenciais')
+            }
           } else {
             console.log("Nenhum usuário encontrado no localStorage");
-          }
-
-
-            // if (usuariosCadastrados.find((usuario) => usuario.emailUsuario === emailUsuario && usuario.senhaUsuario === senhaUsuario)){
-            //     alert('Parabéns, você se logou com sucesso!');
-            // } else {
-            //     alert('Erro! Não foi possivel efetuar o login, confira as credenciais')
-            // }
+          }     
 
     }
   return (
