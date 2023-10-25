@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './HamburguerMenu.css';
+import { Link } from 'react-router-dom';
 
 const HamburguerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,9 @@ const HamburguerMenu = () => {
       </button>
       <nav className={`menu-nav ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#pesquisas">Pesquisas</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'Login'}>Login</Link></li>
+          <li><Link to={'Cadastro'}>Cadastro</Link></li>
         </ul>
       </nav>
     </div>
